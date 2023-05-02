@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@global/*": ["./src/global/*"]
+    },
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "baseUrl": "../",
+    "jsx": "react-jsx",
+
+    /* Completeness */
+    "skipLibCheck": true
+  }
+}
