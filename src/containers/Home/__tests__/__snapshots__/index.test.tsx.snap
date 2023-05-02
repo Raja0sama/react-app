@@ -1,0 +1,273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#f1f4f8",
+      },
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "paddingTop": 8,
+        },
+        {
+          "paddingBottom": 20,
+        },
+        {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "backgroundColor": "#fff",
+        },
+        {
+          "paddingLeft": 32,
+          "paddingRight": 32,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../src/assets/avatar.png",
+        }
+      }
+      style={
+        {
+          "height": 70,
+          "width": 70,
+        }
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Nunito-ExtraBold",
+          },
+          {
+            "fontSize": 24,
+            "lineHeight": 32,
+          },
+          {
+            "paddingLeft": 12,
+          },
+          {
+            "color": "#2E2828",
+          },
+        ]
+      }
+    >
+      Hello, Sharaf
+    </Text>
+  </View>
+  <RCTScrollView
+    style={
+      [
+        {
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "paddingBottom": 16,
+        },
+      ]
+    }
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "color": "#A4B0BC",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            {
+              "fontFamily": "Nunito-Regular",
+            },
+          ]
+        }
+      >
+        Explore Tesla Car
+      </Text>
+      <View>
+        <View
+          style={
+            [
+              {
+                "height": 32,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`Home renders correctly with fetched Mocked 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#f1f4f8",
+      },
+      {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "paddingTop": 8,
+        },
+        {
+          "paddingBottom": 20,
+        },
+        {
+          "display": "flex",
+        },
+        {
+          "flexDirection": "row",
+        },
+        {
+          "alignItems": "center",
+        },
+        {
+          "backgroundColor": "#fff",
+        },
+        {
+          "paddingLeft": 32,
+          "paddingRight": 32,
+        },
+      ]
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../src/assets/avatar.png",
+        }
+      }
+      style={
+        {
+          "height": 70,
+          "width": 70,
+        }
+      }
+    />
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Nunito-ExtraBold",
+          },
+          {
+            "fontSize": 24,
+            "lineHeight": 32,
+          },
+          {
+            "paddingLeft": 12,
+          },
+          {
+            "color": "#2E2828",
+          },
+        ]
+      }
+    >
+      Hello, Sharaf
+    </Text>
+  </View>
+  <RCTScrollView
+    style={
+      [
+        {
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+        {
+          "paddingBottom": 16,
+        },
+      ]
+    }
+  >
+    <View>
+      <Text
+        style={
+          [
+            {
+              "color": "#A4B0BC",
+            },
+            {
+              "fontSize": 20,
+              "lineHeight": 28,
+            },
+            {
+              "fontFamily": "Nunito-Regular",
+            },
+          ]
+        }
+      >
+        Explore Tesla Car
+      </Text>
+      <View>
+        <View
+          style={
+            [
+              {
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Loading Content ....
+          </Text>
+        </View>
+        <View
+          style={
+            [
+              {
+                "height": 32,
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

@@ -1,9 +1,15 @@
 import React, {useCallback} from 'react';
-import {SafeAreaView, StyleProp, ViewProps, ViewStyle} from 'react-native';
+import {
+  SafeAreaView,
+  StyleProp,
+  ViewProps,
+  ViewStyle,
+} from 'react-native';
 import {View, useColorModeValue, useTheme} from 'native-base';
 
 import {AppType} from '@global/reducers/app';
-
+import Header from '@components/Header';
+import Home from '@containers/Home';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import get from 'lodash.get';
 import {useSelector} from 'react-redux';
@@ -17,7 +23,9 @@ interface StackRoutes {
     backButton?: boolean;
   };
 }
-const stackRoutes: StackRoutes = {};
+const stackRoutes: StackRoutes = {
+  HOME: {component: Home},
+};
 
 export const InitialRoutes = (): JSX.Element => {
   const {lang, theme}: AppType = useSelector((state: {app: AppType}) => ({
@@ -31,6 +39,8 @@ export const InitialRoutes = (): JSX.Element => {
 
   return (
     <SafeAreaView style={backgroundColor} className="flex-1">
+
+
       <Stack.Navigator>
         {Object.entries(stackRoutes).map(route =>
           StackScreen({route, lang, theme, bg, backgroundColor}),
@@ -69,7 +79,11 @@ const StackScreen = ({
   return (
     <Stack.Screen
       options={{
-        header: props => <SafeSpace style={backgroundColor}></SafeSpace>,
+        header: props => (
+          <SafeSpace style={backgroundColor}>
+            <Header back={routeInfo?.backButton} bg={bg} {...props} />
+          </SafeSpace>
+        ),
         contentStyle: backgroundColor,
       }}
       key={name}
