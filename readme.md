@@ -1,6 +1,13 @@
-# React Native code assessment
+# React Native App
 
-A brief description of your project, including the fact that it is built with React Native, uses React Navigation and Redux Toolkit, and has a backend based on Spring Boot.
+A brief description of your project, including the fact that it is built with React Native, uses React Navigation and Redux Toolkit
+
+## Update about react-native-web
+React Native Web is a project that allows you to use React Native components and APIs to build web applications using React. However, using React Native Web is not a best idea for several reasons. First, most of the libraries that work with React Native do not support React Native Web, which means you will have to find alternatives or write your own code to make them work. Second, React Native Web requires a lot of mocks and configuration to set it up, which can be time-consuming and error-prone. Third, React Native Web does not have the same performance and compatibility as native web development, which can affect your user experience and SEO. Therefore, unless you have a very specific use case for React Native Web, you should consider other options for web development.
+
+I personally spent last 2 days trying to come up with a best solution to get this to work with react native and regardless of how many mocks you make and configration you do, you will end up facing problems. I am planning on finishing this web config, but i am out of time so sending you as it is. 
+
+Also becasue of lack of time, i might have missed some requirements. 
 
 ## Getting Started
 
@@ -25,14 +32,17 @@ To set up the project on your local machine, follow these steps:
 
 ## Quick Peak
 
-[Imgur](https://imgur.com/pCw67vc)
+[The link contain a video of the app](https://imgur.com/B1UBjPe)
 
+### Basic
+
+The app was tested in android pixel 7 and iphone 14 pro max
 
 ## FAQ's
 
 #### What libraries have i used?
 
-React Navigation, Redux-tool kit, React redux, and Native wind.
+React Navigation, Redux-tool kit, React redux, nativebase, webview, and Nativewind.
 
 #### Why i used native wind?
 
