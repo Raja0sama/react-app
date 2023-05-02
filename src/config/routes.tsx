@@ -10,6 +10,7 @@ import {View, useColorModeValue, useTheme} from 'native-base';
 import {AppType} from '@global/reducers/app';
 import Header from '@components/Header';
 import Home from '@containers/Home';
+import News from '@containers/News';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import get from 'lodash.get';
 import {useSelector} from 'react-redux';
@@ -25,6 +26,7 @@ interface StackRoutes {
 }
 const stackRoutes: StackRoutes = {
   HOME: {component: Home},
+  NEWS: {component: News, backButton: true},
 };
 
 export const InitialRoutes = (): JSX.Element => {
